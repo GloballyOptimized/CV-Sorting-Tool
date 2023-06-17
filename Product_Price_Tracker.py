@@ -35,7 +35,7 @@ while total_searchs > 0:
 
 #..............................................................................................................................................................................................
 
-if price_dropped == True:  # Alert message when price hasnt dropped 
+if price_dropped == False:  # Alert message when price hasnt dropped 
     pywhatkit.sendwhatmsg_instantly(alert_message_number,f'The search cycle is over and the price hasnt dropped to target level , still wanna buy click here : {product_link}')
 
 #..............................................................................................................................................................................................
