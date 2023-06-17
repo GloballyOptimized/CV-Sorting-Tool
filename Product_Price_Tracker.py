@@ -23,7 +23,7 @@ while total_searchs > 0:
 
     product = driver.get(product_link)
     price_element = driver.find_element(By.CLASS_NAME,price_html_element)
-    current_price = price_element.text
+    current_price = int(price_element.text)
 
     if target_price <= current_price:  # Alert message when price dropped below target level 
         pywhatkit.sendwhatmsg_instantly(alert_message_number,f'Congratulations the price of your product has dropped below target level ,click here to buy now : {product_link}')
